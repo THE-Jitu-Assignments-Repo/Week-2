@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TODO APP | WEEK 2</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="toggleMe"><Button class="mode"><i class="fa-sharp fa-solid fa-sun"></i></Button></div>
+
+        <h1>TODO APP</h1>
+        <div id="addNew">
+            <span>Add New Task</span>
+            <!-- Trigger/Open The Modal -->
+            <i class="fas fa-plus myBtn"></i>
+        </div>
+        <h5 class="head-tag">TASKS</h5>
+
+        <div class="status-info">
+            <span class="active">All</span>
+            <span id="completed">Completed</span>
+            <span id="pending">InComplete</span>
+        </div>
+
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>ADD NEW TASK</h1>
+                <form id="task-form">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title">
+                    <div id="msg"></div>
+
+                    <!-- <label for="submitted-date">Submit-date</label>
+                    <input type="date" name="submitted" id="submitted-date" required> -->
+
+                    <label for="due-date">Due-date</label>
+                    <input type="date" name="due" id="due-date"  required>
+
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" placeholder="Write the description" required></textarea>
+                    <div class="btn-tag">
+                        <button type="submit" class="btn-add">ADD</button>
+                        <button class="btn-cancel">Cancel</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+
+
+        <div id="tasks">
+            <!-- <div class="tasks-list">
+                <div id="header">
+                    <span class="task-no"> Task 1</span>
+                    <span class="options">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </span>
+                </div>
+                <span class="due-date">2022-10-16</span>
+                <p>Javascript Dom manipulation</p>
+            </div>
+            <div class="tasks-list">
+                <div id="header">
+                    <span class="task-no">Task 1</span>
+                    <span class="options">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </span>
+                </div>
+                <span class="due-date">2022-10-16</span>
+                <p>Javascript Dom manipulation</p>
+            </div> -->
+
+           
+            <div>Nothing to display</div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
